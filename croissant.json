@@ -1,0 +1,164 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": {"@id": "cr:data", "@type": "@json"},
+    "dataType": {"@id": "cr:dataType", "@type": "@vocab"},
+    "dct": "http://purl.org/dc/terms/",
+    "equivalentProperty": "cr:equivalentProperty",
+    "examples": {"@id": "cr:examples", "@type": "@json"},
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "samplingRate": "cr:samplingRate",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "name": "FramingBench",
+  "description": "FramingBench is a benchmark for measuring how presentation framing of factual product comparison documents shifts the rankings produced by large language models. It comprises 1,213 documents spanning 10 consumer domains, 19 single-technique influence rewrites and 2 stacked combinations, evaluated under three name-versions (Real / Generic / Synthetic) and two target products per domain (primary / secondary). All variant documents are constrained to be truthful but differently framed.",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "version": "1.0.0",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://placeholder.example/framingbench",
+  "citeAs": "Anonymous Authors. FramingBench: Benchmarking the Effect of Presentation Framing on LLM Recommendation Rankings. Under double-blind review, 2026.",
+  "keywords": [
+    "large language models",
+    "recommendation",
+    "ranking",
+    "presentation framing",
+    "robustness",
+    "evaluation benchmark"
+  ],
+  "datePublished": "2026-05-07",
+  "creator": [
+    {
+      "@type": "Organization",
+      "name": "Anonymous"
+    }
+  ],
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "framingbench-zip",
+      "name": "framingbench.zip",
+      "description": "ZIP archive containing the 1,213 markdown variant documents organized by domain, sub-collection, and condition, plus run_llm.py and compute_metrics.py reproducibility scripts.",
+      "contentUrl": "framingbench.zip",
+      "encodingFormat": "application/zip",
+      "contentSize": "2689534 B",
+      "sha256": "c002f3a4d81daf397beab5d83cc74d9d7e27cc4f67389a7055222f79089b3f19"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "documents-fileset",
+      "name": "documents-fileset",
+      "description": "All variant markdown documents inside the archive. Each file is one (domain, example, sub-collection, condition) record.",
+      "containedIn": {"@id": "framingbench-zip"},
+      "encodingFormat": "text/markdown",
+      "includes": "framingbench/*/*/*/*.md"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "documents",
+      "name": "documents",
+      "description": "One record per variant document. The 1,213 records span 10 domains x 6 sub-collections (Real-primary, Real-secondary, Generic-primary, Generic-secondary, Synthetic-primary, Synthetic-secondary). Real-primary additionally contains a baseline document, an editorial document, and two stacked combination variants.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "documents/path",
+          "name": "path",
+          "description": "Path of the file inside the archive, e.g. framingbench/automotive/small_suvs/documents/M1_narrative_framing.md.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {"@id": "documents-fileset"},
+            "extract": {"fileProperty": "fullpath"}
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "documents/domain",
+          "name": "domain",
+          "description": "Top-level consumer domain slug (one of 10 values).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {"@id": "documents-fileset"},
+            "extract": {"fileProperty": "fullpath"},
+            "transform": {"regex": "^framingbench/([^/]+)/[^/]+/[^/]+/[^/]+\\.md$"}
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "documents/example",
+          "name": "example",
+          "description": "Example slug under the domain (each domain has exactly one example).",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {"@id": "documents-fileset"},
+            "extract": {"fileProperty": "fullpath"},
+            "transform": {"regex": "^framingbench/[^/]+/([^/]+)/[^/]+/[^/]+\\.md$"}
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "documents/sub_collection",
+          "name": "sub_collection",
+          "description": "Sub-collection folder name; encodes the (name-version, target) pair. One of: documents, documents_secondary, documents_generic, documents_secondary_generic, documents_synthetic, documents_secondary_synthetic.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {"@id": "documents-fileset"},
+            "extract": {"fileProperty": "fullpath"},
+            "transform": {"regex": "^framingbench/[^/]+/[^/]+/([^/]+)/[^/]+\\.md$"}
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "documents/condition",
+          "name": "condition",
+          "description": "Condition identifier (filename without .md extension). One of: baseline, editorial, P1_position, P2_asymmetric_depth, P3_format, R1_irrelevance_distraction, R2_inter_attribute, R3_bandwagon, Q1_selective_omission, Q2_statistics_addition, Q3_citation_addition, Q4_expert_quotation, Q5_social_proof, M1_narrative_framing, M2_selective_emphasis, M3_criteria_reframing, M4_weakness_as_strength, M5_semantic_confusion, M6_anchoring, M7_loss_framing, M8_scarcity_urgency, combo_M1_Q5, combo_M3_Q5.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {"@id": "documents-fileset"},
+            "extract": {"fileProperty": "fullpath"},
+            "transform": {"regex": "^framingbench/[^/]+/[^/]+/[^/]+/([^/]+)\\.md$"}
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "documents/document",
+          "name": "document",
+          "description": "Full markdown text of the variant document.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileSet": {"@id": "documents-fileset"},
+            "extract": {"fileProperty": "content"}
+          }
+        }
+      ]
+    }
+  ]
+}
