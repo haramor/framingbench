@@ -1,0 +1,85 @@
+## Double Wood Supplements Magnesium Malate
+
+**Best magnesium type for fibromyalgia**
+
+Research suggests this form of magnesium may help reduce pain in people with fibromyalgia. Malate is a form of malic acid, the ingredient that is in many fruits for their tart-like taste. In a 2019 study on rats, researchers found that more magnesium malate was absorbed in the brain than any other introduced supplements. It also states that some people may not be able to digest or take magnesium on its own as a supplement, as some find it hard to digest. Combining malate and magnesium can make it easier on the stomach. It also gives it less of a laxative effect like magnesium citrate may do for some folks. Kelli McGrane, MS, RD, shared that magnesium malate may be easier on the stomach than supplements like magnesium citrate. 'Generally speaking, malate is a good alternative to citrate for people with low magnesium levels since it doesn't have the same laxative effect.' These supplements are also gluten-free, non-GMO, vegan-friendly, and third-party certified.
+
+**Pros:** Magnesium malate may be gentle on the stomach; some users agree that it doesn't cause stomach discomfort; gluten-free, non-GMO, and vegan-friendly; affordable
+
+**Cons:** Dosage may be high for some (3 capsules)
+
+## Double Wood Supplements Magnesium Taurate
+
+**Best for calming effects**
+
+We chose Double Wood's magnesium taurate for its calming effects. It is also rated 4.8/5 on the brands website, based on 91 reviews, and is soy and gluten-free, non-gmo, and vegan friendly. Magnesium taurate contains taurine, a naturally occurring and essential amino acid that has a role in supporting and regulating your nervous system, immune system, and hydration in your body instead of the key 'building blocks of protein' amino acid. A study from 2019 on zebrafish found that taurine shows up during periods of illness or stress. It helped bring down the fishes' cortisol levels so they felt less of a stress response or anxious behaviors. Similarly, a 2022 study in mice found that taurine helped ease depression caused by long-term social stress by protecting brain cells in the part of the brain that controls mood and decision-making. However, more research needs to be done to understand the full effect of magnesium taurate supplements on the body and on stress and anxiety responses.
+
+**Pros:** Some reviewers report feeling calm, relaxed, and less stressed; users mention pills are easy to swallow; affordable
+
+**Cons:** Dosage may be high for some (3 capsules)
+
+## MegaFood Magnesium Capsules
+
+**Best magnesium blend**
+
+This MegaFood supplement contains three forms of magnesium — glycinate, citrate, and malate. As it combines multiple forms of magnesium, each with its own benefits and absorption rate, it may offer more comprehensive support for the body. It also helps reduce the risk of taking too much of one kind, which can sometimes cause side effects. Unlike many other supplements, this one can be taken on an empty stomach. MegaFood is a Certified B Corporation, and this supplement is tested for more than 125 pesticides and herbicides. It is also quality verified, certified non-GMO, vegan, and gluten-free. In addition to magnesium, each tablet contains 50 mg of organic spinach which can also be a good source of magnesium.
+
+**Pros:** Contains three forms of magnesium; can be taken on an empty stomach; non-GMO, vegan, and gluten-free
+
+**Cons:** Not third-party tested for potency
+
+## Nutricost Magnesium Citrate Powder
+
+**Best for muscle cramps**
+
+Magnesium has been shown to play an important role in helping your muscles relax, which is why low magnesium levels are thought to cause some muscle cramps. This powder contains a whopping 320 servings of flavorless magnesium citrate per container. This type of magnesium is generally easier for the body to absorb and use compared to other forms. While there's limited research linking this form of magnesium to muscle cramp relief, our tester reported noticeable benefits in this area. Magnesium citrate is more commonly used to correct deficiencies and support digestion, thanks to its mild laxative effect. It may also help relax the nervous system, which could offer support for symptoms such as constipation, anxiety, and depression.
+
+Tester Jackie Cruz Cruz was hoping the magnesium in this powder would help soothe muscle soreness and cramps. She is a competitive athlete in addition to her day job. The magnesium citrate caused her some GI discomfort, specifically bloating and diarrhea, but she says, 'I also really felt less sore in between workouts and was able to workout everyday for a week. (Usually I take a couple days off due to feeling sore).' To be fair, the dosage on this magnesium is pretty low and she adds, 'After a couple days, I realized I was taking way too much because the product did not come with a scoop. So I was using the protein powder scoop, which is like 10x the serving size.' Despite having to pause on usage due to the stomach issues, Jackie did experience some benefits: 'I did not experience any leg cramping while I used this product, so that is beneficial for me.'
+
+**Pros:** Our tester said it helped with muscle cramping; flavorless so mixes well with a variety of liquids; affordable
+
+**Cons:** Limited research linking magnesium citrate to muscle cramp relief; no scoop provided
+
+## Pure Encapsulations Magnesium Citrate
+
+**Best for occasional constipation**
+
+Magnesium supplements, particularly magnesium citrate, sulfite, hydroxide, and oxide, are thought to be an effective treatment for occasional constipation. These work by an osmotic laxative effect, which means they draw water into the intestines, softening stool and making it easier to pass. Pure Encapsulations Magnesium Citrate is in a facility that's NSF registered and CGMP certified. This supplement is also vegan, non-GMO verified, and certified gluten-free by the Gluten-Free Certification Organization. In comparison to other magnesium supplements, this product has a lower dose of magnesium citrate, which can help move things along without causing an urgent trip to the bathroom. For best results, take a single pill with a meal, one to four times a day, depending on recommendations from a healthcare professional.
+
+**Pros:** Magnesium citrate has a mild laxative effect; affordable; NSF registered and CGMP certified; non-GMO, vegan-friendly, and gluten-free
+
+**Cons:** May cause cramping and diarrhea
+
+## Ritual Magnesium+ Bisglycinate
+
+**Best for chronic pain**
+
+Ritual has recently released this magnesium bisglycinate combined with Montmorency tart cherry to both help relax, restore nerves and muscles, and soothe the mind into rest. For those who manage chronic pain like our tester, this combination is ideal for both pain episodes, physical therapy and muscle recovery, plus the stress of managing all of the above! The tart cherry is a bonus, as the fruit helps the same issues as magnesium, including: muscle soreness, muscle strength building and retention, pain, sleep. Plus a host of other researched benefits, like: antioxidants, which fight cancer growth, brain health, gout, immunity, overweight. Ritual's magnesium bisglycinate is also more potent than Thorne's bisglycinate option above.
+
+Tester Kristin Currin manages fibromyalgia, and myofascial pain in her neck and trapezius muscles. She also has a slower digestion and needs supplemental support with regularity. 'I have tried a couple magnesium powders and polls in the past and I appreciate the winning combination of easing my mind, dulling muscle or nerve pain to a whisper, helping me sleep at night and waking up to a BM first thing in the morning.' She was relieved to say the product didn't disappoint in any of the aforementioned. 'I loved how regular it made my constitution, and their formula of magnesium and tart cherry — for me — was as comparable as my 5 to 10 mg baclofen muscle relaxer. It gently made me drowsy and kept away the nighttime stiffness that makes sleeping with fibromyalgia difficult,' Kristin affirmed. Her only complaints were the taste and the lack of a measuring scoop inside. 'I dug around and around with my fingers, then a utensil, only to realize no scoop was provided. I ended up using 2 separate teaspoon scoops to measure out nightly. I also don't care for stevia so I found the chalky taste poorly masked by the tart cherry extract, and raspberry and strawberry flavors.'
+
+**Pros:** Includes tart cherry, which has other medicinal benefits; third-party tested; bioavailable, so gentle on the stomach and most absorbable form; colorant-, gluten-, soy-, and sugar-free
+
+**Cons:** Unsuitable for those allergic to cherries; sweetened with stevia, which may not be pleasant for some; pricey, at more than $1.86 per serving; no scoop provided inside
+
+## Thorne Magnesium Bisglycinate Powder
+
+**Best for sleep**
+
+We chose Thorne as the best magnesium supplement for sleep because of its high quality ingredients, third-party certification, and inclusion of bisglycinate, a form of magnesium glycinate that may be better absorbed. Research from 2021 suggests that taking magnesium before bed may help improve sleep quality. A 2024 systematic review found that large doses of magnesium can be beneficial for insomnia; however more research needs to be done. Magnesium glycinate is a form of magnesium that's created by combining magnesium with the amino acid glycine, which has been shown to have a calming effect on the brain. Because of this, it's thought that it could be beneficial for sleep, though studies are needed to confirm its effectiveness in humans. Note that research on the benefits of magnesium glycinate for sleep is ongoing. But if you're interested in trying it, Thorne Magnesium Bisglycinate Powder is our top pick. The powder is sweetened with monk fruit concentrate and is free from added sugars, thickeners, artificial flavors and colors. Plus, it gets good reviews for its flavor and ease of use. Thorne products are made in a lab that meets quality and safety standards set by NSF International and the Therapeutic Goods Administration (TGA), a regulatory body in Australia responsible for assessing supplements. Moreover, this supplement is NSF Certified for Sport, a third-party certification that ensures products are free from more than 200 substances banned by many major sports organizations.
+
+Tester Kristin Currin agrees the flavor is slight and pleasant. 'It had a very slight citrusy taste I didn't mind. Like a brightness to it. The monk fruit sweetener wasn't as bad as I'd feared it would be.' Kristin said it did help with her sleep and experienced noticeable 'heavy eyelids' an hour after drinking the magnesium in warm water. She slept through the night each of the five workdays she drank the magnesium. However, she thinks options are out there that might be a better value for the price. 'I found it very effective but the price point is high at $8 per ounce, which is higher than the Ritual Magnesium+ ($7.57/oz.) [below], which also features tart Montgomery Cherry and a higher potency.'
+
+**Pros:** Highly absorbable form of magnesium; no artificial ingredients; NSF Certified for Sport; good flavor, according to reviews
+
+**Cons:** Higher price point compared to similar products; more research needed to confirm effectiveness for sleep
+
+## Trace Minerals Mega-Mag Liquid
+
+**Best for deficiencies**
+
+If you've been diagnosed with a magnesium deficiency, Trace Mineral Mega Mag is worth considering. The liquid supplement provides 95% of the DV of magnesium in the form of magnesium chloride — a form that's often used to address low blood levels of magnesium. This supplement comes in a convenient liquid form and is free from artificial ingredients and added sugars. Trace Minerals supplements are third-party tested for purity and potency. This product specifically is certified by Labdoor, an independent testing organization that confirms label accuracy. The taste of this product can be strong, so it's recommended to mix the liquid with water, juice, or food. Also, this form of magnesium is among the most commonly associated with diarrhea.
+
+**Pros:** High level of magnesium to address deficiency; pure ingredients; third-party tested for purity and potency
+
+**Cons:** May not be suitable for those with sensitive stomachs; expensive; strong flavor
