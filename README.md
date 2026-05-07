@@ -10,6 +10,10 @@ Materials supporting the paper currently under double-blind review.
 - `run_llm.py` — minimal script to evaluate an LLM on a single (domain, target, name-version) folder.
 - `compute_metrics.py` — extract rankings from raw LLM responses (via a Llama 3.1 70B judge over an OpenAI-compatible endpoint) and compute TV, Δrank, top-1, NRG against the per-(domain, target) baseline document.
 
+## Note on file counts
+
+The archive contains **1,213** documents in total. The paper reports 1,200 = 10 × (2 + 19 × 2) × 3 documents in the core benchmark (1 baseline + 1 editorial + 19 single techniques × 2 targets per (domain, name-version), across Real / Generic / Synthetic). The repo additionally includes the 40 stacked-combination variants reported separately in §5.2 (Real version only, for both targets in every domain), and counts P3 (Format manipulation) once per (domain, name-version) since it is target-independent — saving 27 files relative to the per-target formula. Net: 1,200 + 40 − 27 = 1,213. The personal-finance domain is the one exception that stores P3 in both primary and secondary directories across all three versions and therefore has 124 files instead of 121.
+
 ## Directory layout
 
 Each domain lives at `framingbench/<domain>/<example>/`:
