@@ -24,6 +24,7 @@
     "md5": "cr:md5",
     "parentField": "cr:parentField",
     "path": "cr:path",
+    "prov": "http://www.w3.org/ns/prov#",
     "rai": "http://mlcommons.org/croissant/RAI/",
     "recordSet": "cr:recordSet",
     "references": "cr:references",
@@ -40,10 +41,10 @@
   "@type": "sc:Dataset",
   "name": "FramingBench",
   "description": "FramingBench is a benchmark for measuring how presentation framing of factual product comparison documents shifts the rankings produced by large language models. It comprises 1,213 documents spanning 10 consumer domains, 19 single-technique influence rewrites and 2 stacked combinations, evaluated under three name-versions (Real / Generic / Synthetic) and two target products per domain (primary / secondary). All variant documents are constrained to be truthful but differently framed.",
-  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "conformsTo": "http://mlcommons.org/croissant/1.1",
   "version": "1.0.0",
   "license": "https://creativecommons.org/licenses/by/4.0/",
-  "url": "https://placeholder.example/framingbench",
+  "url": "https://anonymous.4open.science/r/framingbench-87F8/",
   "citeAs": "Anonymous Authors. FramingBench: Benchmarking the Effect of Presentation Framing on LLM Recommendation Rankings. Under double-blind review, 2026.",
   "keywords": [
     "large language models",
@@ -60,6 +61,56 @@
       "name": "Anonymous"
     }
   ],
+
+  "rai:dataLimitations": [
+    "Single source article per domain, so within-domain editorial diversity is not captured. Findings reflect framing effects measured against one canonical comparison article per category, not the variation across multiple sources.",
+    "English-language and US-centric: all 10 source articles are from US-domiciled publishers (Wirecutter, NerdWallet, Forbes Advisor, Healthline, NBC News Select, The Car Connection, etc.). Transfer to other languages, jurisdictions, or regulatory regimes is not validated.",
+    "Restricted to consumer product comparisons. The 10 domains span automotive, consumer electronics, food and dining, health and wellness, home services, insurance, legal services, personal finance, software/SaaS, and travel and hospitality. Generalization to non-product ranking tasks (hiring, news, healthcare decisions, search) is not validated.",
+    "Small candidate set per domain: N ranges from 5 to 14 products. Tasks requiring large candidate pools or fine-grained tail behavior are not well-served.",
+    "Variant documents are LLM-generated rewrites under structural constraints rather than naturally occurring biased content. Effects measured may differ from in-the-wild manipulated content where Quality boundaries are not enforced.",
+    "Audit catches the principal classes of construction error, but residual edge cases (e.g., subtle Q3/M7 cross-contamination, marginal P2 elaborations) may persist; reviewer disagreement on borderline calls was approximately 23% on jointly-audited domains.",
+    "Not recommended for: use as training data (intended as a held-out evaluation benchmark only); production purchasing-decision systems; out-of-domain ranking tasks; or fine-grained measurement of low-effect techniques where the per-cell sample size is small."
+  ],
+
+  "rai:dataBiases": [
+    "Domain selection bias. The 10 categories were drawn from popular English-language US consumer review sites; categories absent from these publishers (e.g., enterprise B2B, niche hobbyist goods, internationally-specific products) are not represented.",
+    "Source-article bias. Each domain has exactly one scraped article. The product set, attribute selection, and editorial decisions of that source publisher are inherited; alternative editorial choices from other reviewers are not represented.",
+    "Target product selection bias. The primary target is the lowest-mean-rank product on the neutral baseline (worst-ranked under d_emptyset), and the secondary target is the product nearest the median rank. Both choices bias evaluation toward 'underdog promotion' scenarios; framing effects on already-top-ranked products are not measured.",
+    "Construction-model bias. Documents were extracted, generated, and audited using Claude (Opus, Sonnet, Haiku) and Llama 3.1 70B. Biases of these models may be embedded in extraction completeness, baseline neutrality scoring, audit decisions, and synthetic name generation.",
+    "Language bias. English only. Results may not transfer to other languages.",
+    "Reviewer-identity bias. The audit was conducted by two independent reviewers; their tacit definitions of borderline technique compliance shape which variants entered the released benchmark."
+  ],
+
+  "rai:personalSensitiveInformation": "The dataset contains no personal or sensitive information. All documents describe factual attributes of public consumer products (vehicles, laptops, supplements, credit cards, software, home services, insurance products, legal services, magnesium supplements, luggage). No demographic, health, financial, political, religious, or otherwise sensitive personal data is present. Q4 (Expert Quotation) variants attribute quotes to publicly named reviewers from publicly published reviews, with cited URLs; these are public-figure attributions to existing public statements, not private personal data.",
+
+  "rai:dataUseCases": [
+    "Construct: the dataset operationalizes 'robustness of LLM-induced product rankings to truthful-but-biased presentation framing of factual product information'. Construct validity is supported by (a) audit confirming no novel facts are introduced into any variant relative to the neutral baseline (Quality boundary preserved); (b) cross-target parity audit verifying technique-application symmetry; (c) multi-seed evaluation showing technique effects are statistically separable from sampling noise.",
+    "Established (validated) use cases: evaluating LLM ranker robustness to presentation framing; comparing ranker susceptibility across domains and across model families; measuring effects of stacked manipulations; serving as a diagnostic input for recommendation-system safety and red-team reviews.",
+    "Use cases NOT validated: use as a training corpus (the dataset is sized for evaluation, not training); use as ground truth for real consumer purchasing decisions; generalization to out-of-domain ranking tasks (hiring, search, news, healthcare); fine-grained per-technique × per-domain claims at small N."
+  ],
+
+  "rai:dataSocialImpact": "Positive impact: the benchmark enables systematic study of LLM recommendation vulnerabilities to non-deceptive presentation framing, supporting development of more robust ranker training procedures, fairness audits of recommendation systems, and defensive evaluation in commercial deployments where LLMs mediate consumer choice. Risk: the techniques documented could in principle inform adversaries seeking to manipulate LLM-driven product recommendations (e.g., third-party sellers attempting to game LLM-mediated search or shopping assistants). Three mitigations apply. (1) All 19 single techniques are based on published prior work in Information Manipulation Theory (McCornack, 1992) and the typology of truthful-but-misleading consumer advertising (Hastak and Mazis, 2011); the benchmark organizes and operationalizes existing concepts and does not introduce novel adversarial methods. (2) The construction enforces a Quality boundary requiring that every variant document remains factually truthful relative to the source article, so the dataset cannot be used to teach LLMs to generate false claims, fabricate citations, or otherwise produce disinformation. (3) The dataset is intended for, and is most useful in, defensive evaluation contexts; public release (planned post-acceptance) supports auditability, reproducibility, and community-wide benchmarking of mitigation strategies.",
+
+  "rai:hasSyntheticData": true,
+
+  "prov:wasDerivedFrom": [
+    {"@id": "https://www.thecarconnection.com/rankings/small-suvs", "@type": "sc:CreativeWork", "name": "Best Small SUV Rankings and Reviews"},
+    {"@id": "https://www.nytimes.com/wirecutter/reviews/best-laptops/", "@type": "sc:CreativeWork", "name": "The Best Laptops (Wirecutter)"},
+    {"@id": "https://www.nbcnews.com/select/shopping/best-meal-delivery-services", "@type": "sc:CreativeWork", "name": "Best Meal Delivery Services (NBC Select)"},
+    {"@id": "https://www.healthline.com/nutrition/best-magnesium-supplement", "@type": "sc:CreativeWork", "name": "Best Magnesium Supplements (Healthline)"},
+    {"@id": "https://www.forbes.com/advisor/home-improvement/best-home-warranty-companies/", "@type": "sc:CreativeWork", "name": "Best Home Warranty Companies (Forbes Advisor)"},
+    {"@id": "https://www.forbes.com/advisor/car-insurance/best-car-insurance-companies/", "@type": "sc:CreativeWork", "name": "Best Car Insurance Companies (Forbes Advisor)"},
+    {"@id": "https://venturesmarter.com/business/llc/best-online-legal-services/", "@type": "sc:CreativeWork", "name": "Best Online Legal Services (Venturesmarter)"},
+    {"@id": "https://www.nerdwallet.com/best/credit-cards/balance-transfer", "@type": "sc:CreativeWork", "name": "Best Balance Transfer Credit Cards (NerdWallet)"},
+    {"@id": "https://thedigitalprojectmanager.com/tools/best-project-management-software/", "@type": "sc:CreativeWork", "name": "Best Project Management Software (The Digital Project Manager)"},
+    {"@id": "https://www.nytimes.com/wirecutter/reviews/best-carry-on-luggage/", "@type": "sc:CreativeWork", "name": "The Best Carry-On Luggage (Wirecutter)"}
+  ],
+
+  "prov:wasGeneratedBy": {
+    "@type": "prov:Activity",
+    "description": "FramingBench is constructed by a multi-stage pipeline: (1) HTML-to-JSON extraction from each source article by an Opus agent under a fixed extraction prompt; (2) generation of a neutral baseline d_emptyset per (domain, target) by a Sonnet agent under a constrained baseline-generation prompt; (3) automated verification (zero-tolerance vocabulary checks against published lists of 183 promotional terms, 65 comparative regex patterns, and 46 hedging terms; Flesch readability parity within +/-5 points; semantic-similarity balance to the user query within +/-0.05) plus a Claude Haiku LLM bias judge; (4) variant generation via a 3-tier templated assembler that produces 19 single-technique variants and 2 stacked combinations per (domain, target) deterministically from a per-target Pydantic-validated specification; (5) deterministic two-pass name substitution to produce Generic (numeric category labels) and Synthetic (Llama 3.1 70B-generated fictional plausible names with collision validation) parallel versions; (6) two-phase audit (tag compliance + Quality-boundary verification) by two independent reviewers with cross-target parity check, with regenerate-on-failure loop and explicit failure reasons fed back into the spec. Construction time was April 2026. Annotation team: two independent reviewers per variant. Models used in construction: Claude Opus (extraction), Claude Sonnet (baseline generation), Claude Haiku (neutrality judge), Llama 3.1 70B (synthetic name proposal and post-construction ranking extraction). Construction code, prompts, word lists, and audit protocol are documented in the paper appendix."
+  },
+
   "distribution": [
     {
       "@type": "cr:FileObject",
